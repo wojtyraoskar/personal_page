@@ -1,0 +1,67 @@
+<.flash_group flash={@flash} />
+<div class="flex flex-col items-center py-8 bg-gray-100">
+  <img class="w-32 rounded-full mb-6" src="images/logo.png" alt="Logo" />
+  <!-- Section: Hexagonal Architecture -->
+  <div class="bg-white shadow-lg border border-gray-300 rounded-lg p-6 mb-6 w-3/4">
+    <h2 class="text-xl font-bold text-gray-800 mb-4">Hexagonal Architecture</h2>
+    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+      Hexagonal architecture, also known as *Ports and Adapters*, is a software design pattern that emphasizes isolation of business logic from external systems. The key idea is to define **ports** (interfaces) for inputs and outputs, allowing the application to communicate with the external world through **adapters** without directly depending on their implementation.
+    </p>
+    <ul class="text-gray-600 text-sm mb-4">
+      <li>
+        <strong>Ports:</strong>
+        Define contracts for external communication (e.g., database, APIs).
+      </li>
+      <li>
+        <strong>Adapters:</strong>
+        Implement the contracts to handle specific technologies (e.g., SQL, REST).
+      </li>
+    </ul>
+    <p class="text-sm text-gray-700">
+      <strong>Benefits:</strong>
+      Improved testability, supports Domain-Driven Design (DDD), easier to swap implementations.<br />
+      <strong>Challenges:</strong>
+      Additional complexity, harder to test locally, potential performance trade-offs in distributed setups.
+    </p>
+  </div>
+  <!-- Section: Design by Contract -->
+  <div class="bg-white shadow-lg border border-gray-300 rounded-lg p-6 mb-6 w-3/4">
+    <h2 class="text-xl font-bold text-gray-800 mb-4">Design by Contract (DbC)</h2>
+    <p class="text-gray-600 text-sm leading-relaxed">
+      Design by Contract (DbC) is a programming approach that defines formal agreements between software components. These agreements, called **contracts**, specify:
+    </p>
+    <ul class="text-gray-600 text-sm mt-4">
+      <li>
+        <strong>Preconditions:</strong> What must be true before a method or function executes.
+      </li>
+      <li><strong>Postconditions:</strong> What must be true after execution.</li>
+      <li>
+        <strong>Invariants:</strong>
+        Conditions that must always hold true during the program's lifetime.
+      </li>
+    </ul>
+    <p class="text-sm text-gray-700 mt-4">
+      This methodology improves code reliability, clarity, and maintainability by defining clear rules for how components should interact.
+    </p>
+  </div>
+  <!-- Section: Outbox Pattern -->
+  <div class="bg-white shadow-lg border border-gray-300 rounded-lg p-6 mb-6 w-3/4">
+    <h2 class="text-xl font-bold text-gray-800 mb-4">Outbox Pattern (Coming Soon)</h2>
+    <p class="text-gray-600 text-sm">Placeholder for upcoming notes on the Outbox Pattern.</p>
+  </div>
+  <!-- Section: Railway Oriented Programming -->
+  <div class="bg-white shadow-lg border border-gray-300 rounded-lg p-6 mb-6 w-3/4">
+    <h2 class="text-xl font-bold text-gray-800 mb-4">Railway Oriented Programming</h2>
+    <p class="text-gray-600 text-sm italic">
+      In functional programming a way method that allows us to have error handling in the code by making sure that we are success path and error path in function
+    </p>
+  </div>
+  <!-- Section: Placeholder for Next Topic -->
+  <div class="bg-white shadow-lg border border-gray-300 rounded-lg p-6 mb-6 w-3/4">
+    <h2 class="text-xl font-bold text-gray-800 mb-4">Next Topic (TBD)</h2>
+    <p class="text-gray-600 text-sm italic">A space to add the next topic you're learning!</p>
+  </div>
+</div>
+TODO -> Event-driven Architecture
+Monads -> bitly/monad-paper
+TODO -> Service-Ordiented Archtesture

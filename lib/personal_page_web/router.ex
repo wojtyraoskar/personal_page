@@ -18,6 +18,7 @@ defmodule PersonalPageWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+    get "/knowledge-hub", PageController, :knowledge_hub
   end
 
   # Other scopes may use custom stacks.
